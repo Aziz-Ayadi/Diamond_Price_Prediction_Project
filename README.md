@@ -1,6 +1,6 @@
 # Diamond Price Prediction Project : Project Overview
 * Created a regression project that aims to predict diamond prices based on their natural characteristics with a testing RMSE score equals to 361.12.
-* Collected the data to work with from kaggle website (from a competition called 'Diamond Price Prediction') already divided in train and test sets.
+* Collected the data to work with from kaggle website (from a competition called `Diamond Price Prediction`) already divided in train and test sets.
 * Cleaned data up and engineered features so they will help us in the prediction process like calculating a diamond's volume according to its three dimensions.
 * Optimized Linear Regression, Polynomial Linear Regression, Support Vector Regression, Decision Tree Regression, Random Forest Regression, XgBoost, Gradient Boosting Regression, K-Nearest Neighbors, Ridge Regression and Lasso Regression classifiers to get the best training performance and the best estimator.
 
