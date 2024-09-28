@@ -35,3 +35,37 @@ Clean the data up so that it was usable for our model. I made the following chan
 
 ## EDA
 I looked at the distributions of the data and the value counts for the various categorical variables to get meaningful insights from our data. Below are the visualizations I made :<br><br>
+<img src="carat_dist.png"><br>
+<img src="color_count.png"><br>
+<img src="pair_plot.png"><br>
+<img src="corr_mat.png"><br>
+<img src="carat_price_reg.png"><br>
+<img src="box_plot.png">
+
+## Model Building
+After making all those changes on the data wrangling process and because our data is already divided into training and test sets, we passed by <b>Feature Selection</b> phase using 4 different methods (Variance Threshold technique, KBest technqiue, Correlation technique & Recursive Feature Elimination technique) and tried ten different regression estimators and evaluated by calculating R-squared and RMSE performance metrics on the test data to make sure we avoided OVERFITTING in the process of prediction :
+* Linear Regression
+* Polynomial Linear Regression
+* Support Vector Regression
+* Decision Tree Regression
+* Random Forest Regression
+* XgBoost
+* Gradient Boosting Regression
+* KNN Regression
+* Ridge Regression
+* Lasso Regression
+
+After getting an idea on the best estimator which can best performed on our data, we finetuned it using `GridSearchCV` to optimize our model, extract the best set of its hyperparameters and as a result minimize test RMSE score.
+
+## Model Performance
+XgBoost model had the best test RMSE score which means they are the best classifiers for our problem.
+* Linear Regression : RMSE = 1282.9
+* Polynomial Linear Regression : RMSE = 1020.8
+* Support Vector Regression : RMSE = 2790.4
+* Decision Tree Regression : RMSE = 733.63
+* Random Forest Regression :  RMSE = 566.79
+* XgBoost : RMSE = 361.12
+* Gradient Boosting Regression : RMSE = 631.68
+* KNN Regression : RMSE = 680.51
+* Ridge Regression : RMSE = 1282.9
+* Lasso Regression : RMSE = 1282.89
