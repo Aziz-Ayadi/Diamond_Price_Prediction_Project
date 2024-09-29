@@ -10,7 +10,7 @@
 <b>For Web Framework Requirements :</b> `pip install -r requirements.txt`
 
 ## Data Collection
-Collect data from kaggle website so that training dataset has 43152 diamonds and test dataset has 10788 passengers. With each diamond, we got the folowing :
+Collect data from kaggle website so that training dataset has 43152 diamonds and test dataset has 10788 diamonds. With each diamond, we got the folowing :
 * Diamond's ID
 * Weight of the diamond
 * Quality of the cut (Fair, Good, Very Good, Premium, Ideal)
